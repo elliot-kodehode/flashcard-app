@@ -1,0 +1,49 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Flashcards</title>
+    <script
+      src="script.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <label for="sort-by">Sort by:</label>
+      <select
+        name="sort-by"
+        id="sort-by"
+      >
+        <option value="alpha-asc">Alphabetically ascending</option>
+        <option value="alpha-desc">Alphabetically descending</option>
+      </select>
+      <button class="add-new-card">Add new</button>
+      <!-- <button id="light-mode">☾</button> --- add later-->
+    </header>
+    <h1>Flashcards</h1>
+    <main id="cards-container">
+      <div class="card">
+        <div class="edit-bar">
+          <button class="symbol">✎</button>
+          <button class="symbol">🗑</button>
+        </div>
+        <h6>Question:</h6>
+        <textarea readonly>
+What is the difference between let and const?</textarea
+        >
+        <button class="change-side">Answer →</button>
+      </div>
+    </main>
+  </body>
+</html>
